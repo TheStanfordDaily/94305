@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import './mobirise/css/mbr-additional.css'
-import './bootstrap/css/mbr-additional.css'
+import './mbr-additional.css'
 import './bootstrap/bootstrap-grid.min.css'
-
+import './bootstrap/bootstrap-reboot.min.css'
+import './bootstrap/bootstrap.min.css'
+import './dropdown/style.css'
+import './socicon_css/styles.css'
+import './tether/tether.min.css'
+import './theme/style.css'
 
 export default () => (
   // <div className="App">
