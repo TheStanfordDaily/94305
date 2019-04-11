@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import './mobirise/css/mbr-additional.css'
 import './bootstrap/css/mbr-additional.css'
+import './bootstrap/bootstrap-grid.min.css'
 
 
 export default () => (
