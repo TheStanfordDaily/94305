@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-import './mbr-additional.css'
-import './bootstrap/bootstrap-grid.min.css'
-import './bootstrap/bootstrap-reboot.min.css'
-import './bootstrap/bootstrap.min.css'
-import './dropdown/style.css'
-import './socicon_css/styles.css'
-import './tether/tether.min.css'
-import './theme/style.css'
+import './mobirise/css/mbr-additional.css';
+//import './mobirise/mobirise-icons.css'
+import './bootstrap/css/bootstrap-grid.min.css';
+import './bootstrap/css/bootstrap-reboot.min.css';
+import './bootstrap/css/bootstrap.min.css';
+import './dropdown/css/style.css';
+//import './socicon/css/styles.css';
+import './tether/tether.min.css';
+import './theme/css/style.css';
 
 export default () => (
   // <div className="App">
@@ -43,7 +44,7 @@ export default () => (
                 <div className="navbar-brand">
                   <span className="navbar-logo">
                     <a href="https://mobirise.co">
-                      <img src="assets/images/stannydaily-122x122.jpg" alt="Mobirise" title style={{height: '5.1rem'}} />
+                      <img src={require('./images/stannydaily-192x192.jpg')} alt="Mobirise" title style={{height: '5.1rem'}} />
                     </a>
                   </span>
                   <span className="navbar-caption-wrap"><a className="navbar-caption text-black display-1" href="https://mobirise.co">@94305</a></span>
@@ -72,7 +73,7 @@ export default () => (
               <div className="media-container-row">
                 <div className="media-block m-auto" style={{width: '53%'}}>
                   <div className="mbr-figure">
-                    <img src="assets/images/ggra-975x604.png" alt title />
+                    <img src={require('./images/ggra-975x604.png')} alt title />
                   </div>
                 </div>
                 <div className="cards-block">
@@ -140,7 +141,7 @@ export default () => (
                 <div className="card p-3 col-12 col-md-6 my-col">
                   <div className="card-wrapper">
                     <div className="card-img">
-                      <img src="assets/images/mbr-432x432.jpg" alt="Mobirise" title />
+                      <img src={require('./images/mbr-432x432.jpg')} alt="Mobirise" title />
                     </div>
                     <div className="card-box">
                       <h4 className="card-title pb-3 mbr-fonts-style display-7">
@@ -153,7 +154,7 @@ export default () => (
                 <div className="card p-3 col-12 col-md-6 my-col">
                   <div className="card-wrapper">
                     <div className="card-img">
-                      <img src="assets/images/mbr-432x324.jpg" alt="Mobirise" title />
+                      <img src={require('./images/mbr-432x324.jpg')} alt="Mobirise" title />
                     </div>
                     <div className="card-box">
                       <h4 className="card-title pb-3 mbr-fonts-style display-7">
@@ -166,7 +167,7 @@ export default () => (
                 <div className="card p-3 col-12 col-md-6 my-col">
                   <div className="card-wrapper">
                     <div className="card-img">
-                      <img src="assets/images/mbr-432x270.jpg" alt="Mobirise" title />
+                      <img src={require('./images/mbr-432x270.jpg')} alt="Mobirise" title />
                     </div>
                     <div className="card-box">
                       <h4 className="card-title pb-3 mbr-fonts-style display-7">
@@ -179,7 +180,7 @@ export default () => (
                 <div className="card p-3 col-12 col-md-6 my-col">
                   <div className="card-wrapper">
                     <div className="card-img">
-                      <img src="assets/images/mbr-432x243.jpg" alt="Mobirise" title />
+                      <img src={require('./images/mbr-432x243.jpg')} alt="Mobirise" title />
                     </div>
                     <div className="card-box">
                       <h4 className="card-title pb-3 mbr-fonts-style display-7">Story 4</h4>
@@ -192,7 +193,7 @@ export default () => (
                 <div className="card p-3 col-12 col-md-6 my-col">
                   <div className="card-wrapper">
                     <div className="card-img">
-                      <img src="assets/images/mbr-1-432x243.jpg" alt="Mobirise" title />
+                      <img src={require('./images/mbr-432x243.jpg')} alt="Mobirise" title />
                     </div>
                     <div className="card-box">
                       <h4 className="card-title pb-3 mbr-fonts-style display-7">
@@ -212,7 +213,7 @@ export default () => (
                 <div className="card p-3 col-12 col-md-6 my-col">
                   <div className="card-wrapper">
                     <div className="card-img">
-                      <img src="assets/images/background1.jpg" alt="Mobirise" />
+                      <img src={require('./images/background1.jpg')} alt="Mobirise" />
                     </div>
                     <div className="card-box">
                       <h4 className="card-title pb-3 mbr-fonts-style display-7">
@@ -227,7 +228,7 @@ export default () => (
                 <div className="card p-3 col-12 col-md-6 my-col">
                   <div className="card-wrapper">
                     <div className="card-img">
-                      <img src="assets/images/background2.jpg" alt="Mobirise" />
+                      <img src={require('./images/background2.jpg')} alt="Mobirise" />
                     </div>
                     <div className="card-box">
                       <h4 className="card-title pb-3 mbr-fonts-style display-7">
@@ -242,7 +243,7 @@ export default () => (
                 <div className="card p-3 col-12 col-md-6 my-col">
                   <div className="card-wrapper">
                     <div className="card-img">
-                      <img src="assets/images/background3.jpg" alt="Mobirise" />
+                      <img src={require('./images/background3.jpg')} alt="Mobirise" />
                     </div>
                     <div className="card-box">
                       <h4 className="card-title pb-3 mbr-fonts-style display-7">
@@ -257,7 +258,7 @@ export default () => (
                 <div className="card p-3 col-12 col-md-6 my-col">
                   <div className="card-wrapper">
                     <div className="card-img">
-                      <img src="assets/images/background4.jpg" alt="Mobirise" />
+                      <img src={require('./images/background4.jpg')} alt="Mobirise" />
                     </div>
                     <div className="card-box">
                       <h4 className="card-title pb-3 mbr-fonts-style display-7">
@@ -272,7 +273,7 @@ export default () => (
                 <div className="card p-3 col-12 col-md-6 my-col">
                   <div className="card-wrapper">
                     <div className="card-img">
-                      <img src="assets/images/background5.jpg" alt="Mobirise" />
+                      <img src={require('./images/background5.jpg')} alt="Mobirise" />
                     </div>
                     <div className="card-box">
                       <h4 className="card-title pb-3 mbr-fonts-style display-7">
@@ -293,7 +294,7 @@ export default () => (
                 <div className="col-md-3">
                   <div className="media-wrap">
                     <a href="https://mobirise.co/">
-                      <img src="assets/images/stannydaily-192x192.jpg" alt="Mobirise" title />
+                      <img src={require('./images/stannydaily-192x192.jpg')} alt="Mobirise" title />
                     </a>
                   </div>
                 </div>
