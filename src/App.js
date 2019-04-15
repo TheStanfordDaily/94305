@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import './mobirise/css/mbr-additional.css';
-//import './mobirise/mobirise-icons.css'
+import './mobirise/mobirise-icons.css'
 import './bootstrap/css/bootstrap-grid.min.css';
 import './bootstrap/css/bootstrap-reboot.min.css';
 import './bootstrap/css/bootstrap.min.css';
@@ -80,7 +80,7 @@ export default () => (
                   <div className="cards-container">
                     <div className="card px-3 align-left col-12">
                       <div className="panel-item p-4 d-flex align-items-center">
-                        <div className="card-img pr-3 d-flex align-items-center align-left">
+                        <div className="">
                           <img src="https://www.fpaceforum.com/forum/picture.php?albumid=1019&pictureid=4555" />
                         </div>
                         <div className="card-text">
@@ -94,7 +94,7 @@ export default () => (
                     </div>
                     <div className="card px-3 align-left col-12">
                       <div className="panel-item p-4 d-flex align-items-center">
-                        <div className="card-img pr-3 d-flex align-items-center align-left">
+                        <div className="">
                           <img src="https://www.fpaceforum.com/forum/picture.php?albumid=1019&pictureid=4555" />
                         </div>
                         <div className="card-text">
@@ -108,7 +108,7 @@ export default () => (
                     </div>
                     <div className="card px-3 align-left col-12">
                       <div className="panel-item p-4 d-flex align-items-center">
-                        <div className="card-img pr-3 d-flex align-items-center align-left">
+                        <div className="">
                           <img src="https://www.fpaceforum.com/forum/picture.php?albumid=1019&pictureid=4555" />
                         </div>
                         <div className="card-text">
