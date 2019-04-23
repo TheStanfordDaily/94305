@@ -9,6 +9,10 @@ import './dropdown/css/style.css';
 //import './socicon/css/styles.css';
 import './tether/tether.min.css';
 import './theme/css/style.css';
+import MyPosCode from './postcode.js'
+import Feature from './feature.js'
+import Story from './story.js'
+import Graph from './graph.js'
 
 export default () => (
   // <div className="App">
@@ -47,7 +51,7 @@ export default () => (
                       <img src={require('./images/stannydaily-192x192.jpg')} alt="Mobirise" title style={{height: '5.1rem'}} />
                     </a>
                   </span>
-                  <span className="navbar-caption-wrap"><a className="navbar-caption text-black display-1" href="https://mobirise.co">@94305</a></span>
+                  <span className="navbar-caption-wrap"><a className="navbar-caption text-black display-1" href="https://mobirise.co"><MyPosCode/>@94305</a></span>
                 </div>
               </div>
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -65,6 +69,7 @@ export default () => (
                   </a></div>
               </div>
             </nav>
+            <div id="myNavbar"></div>
           </section>
           <section className="engine"><a href="https://mobirise.info/x">css templates</a></section><section className="counters3 counters cid-rjyBkEKRPr" id="counters3-1">
             <div className="container pt-4 mt-2">
@@ -73,10 +78,11 @@ export default () => (
               <div className="media-container-row">
                 <div className="media-block m-auto" style={{width: '53%'}}>
                   <div className="mbr-figure">
+                  <Graph/>
                     <img src={require('./images/ggra-975x604.png')} alt title />
                   </div>
                 </div>
-                <div className="cards-block">
+                <div className="cards-block"><Feature/>
                   <div className="cards-container">
                     <div className="card px-3 align-left col-12">
                       <div className="panel-item p-4 d-flex align-items-center">
@@ -136,7 +142,7 @@ export default () => (
             </div>
           </section>
           <section className="features17 cid-rjyBH7X7ph" id="features17-2">
-            <div className="container-fluid">
+            <div className="container-fluid"><Story/>
               <div className="media-container-row">
                 <div className="card p-3 col-12 col-md-6 my-col">
                   <div className="card-wrapper">
