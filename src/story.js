@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
+
 let data = [
     {
         'title': 'story1',
@@ -29,42 +30,35 @@ let data = [
     }
 ]
 
-let data2 = [
-    {
-        'title': 'No Coding',
-        'img': require('./images/background1.jpg'),
-        'content': 'Mobirise is an easy website builder - just drop site elements to your page, add content and style it to look the way you like.'
-    },
-    {
-        'title': 'Mobile Friendly',
-        'img': require('./images/background2.jpg'),
-        'content': 'All sites you make with Mobirise are mobile-friendly. You dont have to create a special mobile version of your site.'
-    },
-    {
-        'title': 'Unique Styles',
-        'img': require('./images/background3.jpg'),
-        'content': 'Mobirise is an easy website builder - just drop site elements to your page, add content and style it to look the way you like.'
-    },
-    {
-        'title': 'Unlimited Sites',
-        'img': require('./images/background4.jpg'),
-        'content': 'Mobirise is an easy website builder - just drop site elements to your page, add content and style it to look the way you like.'
-    },
-    {
-        'title': 'No Coding',
-        'img': require('./images/background5.jpg'),
-        'content': 'Mobirise is an easy website builder - just drop site elements to your page, add content and style it to look the way you like.'
+class Story extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            data:[]
+        }
     }
-]
-function Story() {
-    return (<div className="media-container-row">{data.map(item => <div className="card p-3 col-12 col-md-6 my-col">
-        <div className="card-wrapper">
-            <div className="card-img"><img src={item.img} alt="Mobirise" /></div>
+    
+    async componentDidMount(){
+        let response = await fetch("https://www.stanforddaily.com/wp-json/wp/v2/posts?_embed")
+        .then(e => e.json())
+        this.setState({data: response})    
+    }
+
+  
+
+    render(){      
+    return (<div className="media-container-row">{this.state.data.map(item => <div className="card p-3 col-12 col-md-6 my-col">
+        <div className="card-wrapper"> {console.log(item._embedded)}
+            <div className="card-img">
+            <img src={item._embedded['wp:featuredmedia']&& item._embedded['wp:featuredmedia'].length? item._embedded['wp:featuredmedia'][0].link:""} alt="Mobirise" /></div>
             <div className="card-box">
-                <h4 className="card-title pb-3 mbr-fonts-style display-7">{item.title}</h4>
-                <p className="mbr-text mbr-fonts-style display-7">{item.content}<br /></p>
+                <h4 className="card-title pb-3 mbr-fonts-style display-7" dangerouslySetInnerHTML={{__html:item.title.rendered}} />
+                <p>Published date:{item.date}</p>
+                <a href={item.link}>Read More</a>
+                <p className="mbr-text mbr-fonts-style display-7" dangerouslySetInnerHTML={{__html:item.excerpt.rendered}}/>
             </div></div></div>)}
     </div>);
+    }
 }
 
 export default Story;
