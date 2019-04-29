@@ -51,7 +51,7 @@ export default () => (
                       <img src={require('./images/stannydaily-192x192.jpg')} alt="Mobirise" title style={{height: '5.1rem'}} />
                     </a>
                   </span>
-                  <span className="navbar-caption-wrap"><a className="navbar-caption text-black display-1" href="https://mobirise.co"><MyPosCode/>@94305</a></span>
+                  <span className="navbar-caption-wrap"><a className="navbar-caption text-black display-1" href="https://mobirise.co"><MyPosCode/></a></span>
                 </div>
               </div>
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -79,54 +79,10 @@ export default () => (
                 <div className="media-block m-auto" style={{width: '53%'}}>
                   <div className="mbr-figure">
                   <Graph/>
-                    <img src={require('./images/ggra-975x604.png')} alt title />
+                    {/* <img src={require('./images/ggra-975x604.png')} alt title /> */}
                   </div>
                 </div>
-                <div className="cards-block"><Feature/>
-                  <div className="cards-container">
-                    <div className="card px-3 align-left col-12">
-                      <div className="panel-item p-4 d-flex align-items-center">
-                        <div className="">
-                          <img src="https://www.fpaceforum.com/forum/picture.php?albumid=1019&pictureid=4555" />
-                        </div>
-                        <div className="card-text">
-                          <h4 className="mbr-content-title mbr-bold mbr-fonts-style display-7">
-                            Feature 1</h4>
-                          <p className="mbr-content-text mbr-fonts-style display-7">
-                            Mobirise give you the freedom to develop as many websites as you like.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card px-3 align-left col-12">
-                      <div className="panel-item p-4 d-flex align-items-center">
-                        <div className="">
-                          <img src="https://www.fpaceforum.com/forum/picture.php?albumid=1019&pictureid=4555" />
-                        </div>
-                        <div className="card-text">
-                          <h4 className="mbr-content-title mbr-bold mbr-fonts-style display-7">
-                            Feature 2</h4>
-                          <p className="mbr-content-text mbr-fonts-style display-7">
-                            Choose from the large selection of latest pre-made blocks.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card px-3 align-left col-12">
-                      <div className="panel-item p-4 d-flex align-items-center">
-                        <div className="">
-                          <img src="https://www.fpaceforum.com/forum/picture.php?albumid=1019&pictureid=4555" />
-                        </div>
-                        <div className="card-text">
-                          <h4 className="mbr-content-title mbr-bold mbr-fonts-style display-7">Feature 3</h4>
-                          <p className="mbr-content-text mbr-fonts-style display-7">
-                            One of Bootstrap's big point is responsiveness 
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <Feature/>
               </div>
             </div>
           </section>
@@ -143,7 +99,7 @@ export default () => (
           </section>
           <section className="features17 cid-rjyBH7X7ph" id="features17-2">
             <div className="container-fluid"><Story/>
-              <div className="media-container-row">
+              {/* <div className="media-container-row">
                 <div className="card p-3 col-12 col-md-6 my-col">
                   <div className="card-wrapper">
                     <div className="card-img">
@@ -210,7 +166,7 @@ export default () => (
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </section>
           <section className="features17 cid-rjyBHnD5bH" id="features17-3">
